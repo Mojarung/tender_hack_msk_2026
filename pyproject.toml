@@ -1,0 +1,23 @@
+[project]
+name = "cte-vector-search"
+version = "0.1.0"
+description = "CTE Vector Search & Rerank Microservice"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "langchain-nvidia-ai-endpoints>=0.3.0",
+    "langgraph>=0.2.0",
+    "qdrant-client>=1.12.0",
+    "redis>=5.0.0",
+    "httpx>=0.27.0",
+    "pydantic-settings>=2.5.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+serve = "app.main:start"
+index = "scripts.index_data:main"
+
+[tool.uv]
+package = false

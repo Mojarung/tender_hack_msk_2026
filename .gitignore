@@ -1,0 +1,28 @@
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+build/
+dist/
+*.egg-info/
+
+# Node/Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+yarn-error.log
+npm-debug.log*
+
+# Project Specific
+qdrant_storage/
+*.csv
+synonyms.json
+data/*.csv
